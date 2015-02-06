@@ -7,3 +7,4 @@ f5 lin 5 7
 f6 sub 6 5 4
 f7 mul 7 0 1
 f8 mul 8 7 2
+f9 div 9 8 2
