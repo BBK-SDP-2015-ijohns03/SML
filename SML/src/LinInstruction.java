@@ -3,7 +3,7 @@
 /**
  * This class ....
  * 
- * @author someone
+ * @author Ian
  */
 
 public class LinInstruction extends Instruction {

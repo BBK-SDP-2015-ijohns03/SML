@@ -7,7 +7,7 @@ import lombok.Data;
  * 
  * An instance contains 32 registers and methods to access and change them
  * 
- * @author someone
+ * @author Ian
  */
 
 @Data
