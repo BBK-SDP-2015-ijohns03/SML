@@ -9,3 +9,10 @@ f7 mul 7 0 1
 f8 mul 8 7 2
 f9 div 9 8 2
 f10 out 9
+f11 lin 20 7
+f12 lin 21 1
+f13 lin 22 1
+f14 mul 21 21 20
+f15 sub 20 20 22
+f16 bnz 20 f14
+f17 out 21
