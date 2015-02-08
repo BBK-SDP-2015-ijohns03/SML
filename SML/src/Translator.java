@@ -116,8 +116,6 @@ public class Translator {
 			return new BnzInstruction(label, r, labelString);
 		}
 
-		// You will have to write code here for the other instructions.
-
 		return null;
 	}
 
