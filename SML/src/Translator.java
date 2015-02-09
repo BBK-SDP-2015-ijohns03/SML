@@ -98,24 +98,24 @@ public class Translator {
 				r = scanInt();
 				s1 = scanInt();
 				s2 = scanInt();
-				return new SubInstruction(label, r, s1, s2);
+				return SubInstruction.class.getConstructor(String.class, int.class, int.class, int.class).newInstance(label, r, s1, s2);
 			case "mul":
 				r = scanInt();
 				s1 = scanInt();
 				s2 = scanInt();
-				return new MulInstruction(label, r, s1, s2);
+				return MulInstruction.class.getConstructor(String.class, int.class, int.class, int.class).newInstance(label, r, s1, s2);
 			case "div":
 				r = scanInt();
 				s1 = scanInt();
 				s2 = scanInt();
-				return new DivInstruction(label, r, s1, s2);
+				return DivInstruction.class.getConstructor(String.class, int.class, int.class, int.class).newInstance(label, r, s1, s2);
 			case "out":
 				r = scanInt();
-				return new OutInstruction(label, r);
+				return OutInstruction.class.getConstructor(String.class, int.class).newInstance(label, r);
 			case "bnz":
 				r = scanInt();
 				String labelString = scan();
-				return new BnzInstruction(label, r, labelString);
+				return BnzInstruction.class.getConstructor(String.class, int.class, String.class).newInstance(label, r, labelString);
 			}
 		} catch (NoSuchMethodException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | SecurityException e) {
 			e.printStackTrace();
